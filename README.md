@@ -3,7 +3,7 @@
 
 ## Step1 :
 
-Before building docker container, we first need to download following two files and place them under `courses-cs239-winter2018/docker/`.
+Before building docker container, we first need to download following two files and place them under `courses-cs239-winter2018-students`.
 1. `spark-2.1.1-SNAPSHOT-bin-2.2.0.tgz` available at [BigSift](https://drive.google.com/file/d/1aSajeJM-LvvaDXCAk5sRjDkSQ8ZbBddO/view?usp=sharing) 
 2. `Zeppelin binary` with all interpreters . Available at [Zeppelin](https://drive.google.com/file/d/1t_HXrJFrKdvC_xW4CBTOT636OzcsBFA7/view?usp=sharing). Extract the file using `tar -xzf zeppelin.tar.gz` in the docker directory.
 ## Step 2: Docker Installation
