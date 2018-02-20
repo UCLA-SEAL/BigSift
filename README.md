@@ -9,7 +9,7 @@ Before building docker container, we first need to download following two files 
 ## Step 2: Docker Installation
 Now install Docker in your local machine (Follow instructions [here](https://docs.docker.com/engine/installation/)). After the installation is complete, launch the 'Docker' application that will start the Docker service (e.g., Whale-like icon on your Mac status bar). If this step is successful, you should be able to type 'docker' on your command line console.  
 ## Step 3: Create a Docker Image
-Assuming  that you have installed Docker and currently in the `courses-cs239-witner2018/docker` directory, you should be able to see "DockerFile" under this directory. The following command creates a docker image using the DockerFile under the current directory ('.') and assigns "spark" as the name of the image. 
+Assuming  that you have installed Docker and currently in the `courses-cs239-winter2018-students` directory, you should be able to see "DockerFile" under this directory. The following command creates a docker image using the DockerFile under the current directory ('.') and assigns "spark" as the name of the image. 
 
 ```bash
 docker build -t spark .
