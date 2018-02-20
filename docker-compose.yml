@@ -1,5 +1,5 @@
 master:
-  image: spark123
+  image: spark
   command: bin/spark-class org.apache.spark.deploy.master.Master -h master
   hostname: master
   environment:
@@ -26,7 +26,7 @@ master:
     - ./data:/tmp/data
 
 zeppelin:
-  image: spark123
+  image: spark
   hostname: zeppelin
   command: /bin/bash -c "zeppelin/bin/zeppelin-daemon.sh start && bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077"
   environment:
@@ -61,7 +61,7 @@ zeppelin:
     - ./data:/tmp/data
 
 worker:
-  image: spark123
+  image: spark
   command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
   hostname: worker
   environment:
