@@ -1,6 +1,7 @@
 
 # Docker Compose (Virtual Cluster) Environment on a Single Machine 
-
+## BigSift on Apache Spark 2.1. 
+The source code of BigSift is available at https://github.com/maligulzar/bigdebug/tree/bigsift-demo
 ## Step1 :
 
 Before building docker container, we first need to download following two files and place them under `courses-cs239-winter2018-students`.
