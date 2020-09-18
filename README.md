@@ -4,13 +4,13 @@
 The source code of BigSift is available at https://github.com/maligulzar/bigdebug/tree/bigsift-demo
 ## Step1 :
 
-Before building docker container, we first need to download following two files and place them under `courses-cs239-winter2018-students`.
+Before building docker container, we first need to download following two files and place them under `BigSift-Zeppelin`.
 1. `spark-2.1.1-SNAPSHOT-bin-2.2.0.tgz` available at [BigSift](https://drive.google.com/file/d/1aSajeJM-LvvaDXCAk5sRjDkSQ8ZbBddO/view?usp=sharing) 
 2. `Zeppelin binary` with all interpreters . Available at [Zeppelin](https://drive.google.com/file/d/1t_HXrJFrKdvC_xW4CBTOT636OzcsBFA7/view?usp=sharing). Extract the file using `tar -xzf zeppelin.tar.gz` in the docker directory.
 ## Step 2: Docker Installation
 Now install Docker in your local machine (Follow instructions [here](https://docs.docker.com/engine/installation/)). After the installation is complete, launch the 'Docker' application that will start the Docker service (e.g., Whale-like icon on your Mac status bar). If this step is successful, you should be able to type 'docker' on your command line console.  
 ## Step 3: Create a Docker Image
-Assuming  that you have installed Docker and currently in the `courses-cs239-winter2018-students` directory, you should be able to see "DockerFile" under this directory. The following command creates a docker image using the DockerFile under the current directory ('.') and assigns "spark" as the name of the image. 
+Assuming  that you have installed Docker and currently in the `BigSift-Zeppelin` directory, you should be able to see "DockerFile" under this directory. The following command creates a docker image using the DockerFile under the current directory ('.') and assigns "spark" as the name of the image. 
 
 ```bash
 docker build -t spark .
