@@ -91,7 +91,7 @@ In case a spark job can not be submitted through the notebook (Spark Context not
 The `down` command will bring down the entire application and remove the containers, images, volumes, and networks entirely,
 
 ## How to cite 
-Please refer to our SoCC'17 paper, [Efficient Fuzz Testing for Data Analytics using Framework Abstraction](http://web.cs.ucla.edu/~miryung/Publications/ase2020-bigfuzz.pdf) for more details. 
+Please refer to our SoCC'17 paper, [Automated debugging in data-intensive scalable computing](https://people.cs.vt.edu/~gulzar/assets/pdf/socc17-final244-acmpaginated.pdf) for more details. 
 ### Bibtex  
 @inproceedings{10.1145/3127479.3131624,
 author = {Gulzar, Muhammad Ali and Interlandi, Matteo and Han, Xueyuan and Li, Mingda and Condie, Tyson and Kim, Miryung},
