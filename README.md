@@ -1,5 +1,6 @@
 
-# BigSift: Automated Debugging of Big Data Analytics in Data-Intensive Scalable Computing
+# BigSift
+Bigsift: Automated Debugging of Big Data Analytics in Data-Intensive Scalable Computing (SoCC 2017)
 
 ## Summary
 Developing Big Data Analytics often involves trial and error debugging, due to the unclean nature of datasets or wrong assumptions made about data. When errors (e.g. program crash, outlier results, etc.) arise, developers are often interested in pinpointing the root cause of errors and explaining the sources of anomalies. To address this problem, BigSift takes an Apache Spark program, a user-defined test oracle function, and a dataset as input and outputs a minimum set of input records that reproduces the same test
@@ -88,3 +89,25 @@ Use the following command to shutdown the cluster. Make sure you have transferre
 ## Note:
 In case a spark job can not be submitted through the notebook (Spark Context not present exception), restart the cluster using `docker-compose down` and then `docker-compose up`. 
 The `down` command will bring down the entire application and remove the containers, images, volumes, and networks entirely,
+
+## How to cite 
+Please refer to our SoCC'17 paper, [Efficient Fuzz Testing for Data Analytics using Framework Abstraction](http://web.cs.ucla.edu/~miryung/Publications/ase2020-bigfuzz.pdf) for more details. 
+### Bibtex  
+@inproceedings{10.1145/3127479.3131624,
+author = {Gulzar, Muhammad Ali and Interlandi, Matteo and Han, Xueyuan and Li, Mingda and Condie, Tyson and Kim, Miryung},
+title = {Automated Debugging in Data-Intensive Scalable Computing},
+year = {2017},
+isbn = {9781450350280},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3127479.3131624},
+doi = {10.1145/3127479.3131624},
+booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
+pages = {520–534},
+numpages = {15},
+keywords = {big data, data provenance, fault localization, data-intensive scalable computing (DISC), and data cleaning, automated debugging},
+location = {Santa Clara, California},
+series = {SoCC '17}
+}
+
+[DOI Link](https://doi.org/10.1145/3127479.3131624)
