@@ -1,7 +1,25 @@
 
-# Docker Compose (Virtual Cluster) Environment on a Single Machine 
+# BigSift: Automated Debugging of Big Data Analytics in Data-Intensive Scalable Computing
+
+## Summary
+Developing Big Data Analytics often involves trial and error debugging, due to the unclean nature of datasets or wrong assumptions made about data. When errors (e.g. program crash, outlier results, etc.) arise, developers are often interested in pinpointing the root cause of errors and explaining the sources of anomalies. To address this problem, BigSift takes an Apache Spark program, a user-defined test oracle function, and a dataset as input and outputs a minimum set of input records that reproduces the same test
+failure by combining the insights from delta debugging with data provenance. The technical contribution of BigSift is the design of systems optimizations that bring automated debugging closer to a reality for data intensive scalable computing.
+
+BigSift exposes an interactive web interface where a user can monitor a big data analytics job running remotely on the cloud, write a user-defined test oracle function, and then trigger the automated debugging process. BigSift also provides a set of predefined test oracle functions, which can be used for explaining common types of anomalies in big data analytics—for example, finding the origin of the output value that is more than k standard deviations away from the median. The demonstration video is available at https://youtu.be/jdBsCd61a1Q.
+
+## Team 
+This project is developed by Professor [Miryung Kim](http://web.cs.ucla.edu/~miryung/)'s Software Engineering and Analysis Laboratory at UCLA. 
+If you encounter any problems, please open an issue or feel free to contact us:
+
+[Muhammad Ali Gulzar](https://people.cs.vt.edu/~gulzar/): Assistant Professsor at Virginia Tech, gulzar@cs.vt.edu;
+
+[Siman Wang](https://www.linkedin.com/in/siman-wang-964316139/): Software Engineer at Snap;
+
+[Miryung Kim](http://web.cs.ucla.edu/~miryung/): Professor at UCLA, miryung@cs.ucla.edu;
+
 ## BigSift on Apache Spark 2.1. 
 The source code of BigSift is available at https://github.com/maligulzar/bigdebug/tree/bigsift-demo
+
 ## Step1 :
 
 Before building docker container, we first need to download following two files and place them under `BigSift-Zeppelin`.
